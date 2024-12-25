@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dr.care</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript">
+	function loaddoctor(deptid)
+{
+	    if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("divdoc").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","departmentDoctor.php?deptid="+deptid,true);
+        xmlhttp.send();
+}
+	</script>
+  </head>
+  <body>
+    <nav class="navbar py-4 navbar-expand-lg ftco_navbar navbar-light bg-light flex-row">
+    	<div class="container">
+    		<div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
+    			<div class="col-lg-2 pr-4 align-items-center">
+		    		<a class="navbar-brand" href="index.html">Dr.<span>care</span></a>
+	    		</div>
+	    		<div class="col-lg-10 d-none d-md-block">
+		    		<div class="row d-flex">
+			    		<div class="col-md-4 pr-4 d-flex topper align-items-center">
+			    			<div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-map"></span></div>
+						    <span class="text">Address: 198 West 21th Street, Suite 721 New York NY 10016</span>
+					    </div>
+					    <div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+						    <span class="text">Email: youremail@email.com</span>
+					    </div>
+					    <div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+						    <span class="text">Phone: + 1235 2355 98</span>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+		  </div>
+    </nav>
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container d-flex align-items-center">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      <p class="button-custom order-lg-last mb-0"><a href="appointment.html" class="btn btn-secondary py-2 px-3">Make An Appointment</a></p>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav mr-auto">
+	        	<li class="nav-item"><a href="index.html" class="nav-link pl-0">Home</a></li>
+	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	        	<li class="nav-item"><a href="doctor.html" class="nav-link">Doctor</a></li>
+	        	<li class="nav-item"><a href="department.html" class="nav-link">Departments</a></li>
+	        	<li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+	        	<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-2 bread">Appointment</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Appointment <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+		<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-6 py-5 pr-md-5">
+	          <div class="heading-section heading-section-white ftco-animate mb-5">
+	          	<span class="subheading">Consultation</span>
+	            <h2 class="mb-4">Free Consultation</h2>
+	            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+	          </div>
+	          <form  class="appointment-form ftco-animate" method="post" action="" name="frmpatapp" onSubmit="return validateform()">
+			  <table>
+	    				<div class="d-md-flex">
+		    				<div class="form-group">
+		    					<tr><td><input type="text" class="form-control" placeholder="Patient Name"></td></tr>
+		    				</div>
+		    				<div class="form-group ml-md-4">
+		    					<tr><td><input type="text" class="form-control" placeholder="Address"></td></tr>
+		    				</div>
+							<br>
+							<div class="form-group ml-md-4">
+		    					<tr><td><input type="text" class="form-control" placeholder="city"></td></tr>
+		    				</div>
+							<div class="form-group ml-md-4">
+		    					<tr><td><input type="text" class="form-control" placeholder="Mobile Number"></td></tr>
+		    				</div>
+							<div class="form-group ml-md-4">
+		    					<tr><td><input type="text" class="form-control" placeholder="Login-ID"></td></tr>
+		    				</div>
+							<div class="form-group ml-md-4">
+		    					<tr><td><input type="password" class="form-control" placeholder="Password"></td></tr>
+		    				</div>
+							<div class="form-group ml-md-4">
+		    					
+								<tr><td><select class="form-control" name="select6" id="select6">
+								<option value="">Select</option>
+								<option value='Male'>Male</option><option value='Female'>Female</option>              </select></td></tr>
+		    				</div>
+							<div class="form-group ml-md-4">
+		    					<tr><td><input type="date" class="form-control" name="dob" id="dob" value=""  ></td></tr>
+		    				</div>
+							<div class="form-group ml-md-4">
+		    					<tr><td><input type="date" class="form-control" min="2019-05-10" name="appointmentdate" id="appointmentdate"></td></tr>
+		    				</div>
+							<div class="form-group ml-md-4">
+		    					<tr><td><input type="time" class="form-control" name="appointmenttime" id="appointmenttime"></td></tr>
+		    				</div>
+							<div class="form-group ml-md-4">
+		    					<tr><td><select class="form-control" name="department" id="department" onchange="loaddoctor(this.value)">
+								<option value="">Select department</option>
+								<option value='11'>Physician</option><option value='12'>Children doctor</option><option value='13'>General Medicne1</option><option value='14'>ENT Specialist</option><option value='15'>Neurologist</option><option value='16'>Surgery</option><option value='17'>Pediatrics</option><option value='18'>Pharmacy</option><option value='19'>Laboratory and Blood bank</option><option value='20'>Physiotherapy</option><option value='41'></option><option value='42'>physician11</option><option value='43'>shricharan</option>          </select>
+								</td></tr>
+							</div>
+							<div class="form-group ml-md-4">
+		    					<tr><td><select name="doct" id="doct" class="form-control">
+								<option value="">Select doctor</option>          
+							</select></td></tr>
+		    				</div>
+							<div class="form-group ml-md-4">
+		    					<tr><td><input  type="submit" value="submit" name="submit" id="submit"></td></tr>
+		    				</div>
+	    				</div>
+	    				
+		            </div>
+		          </div>
+	          </div>
+          </div>
+        </div>
+    	</div>
+    </section>
+
+   
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
+
+
+
+<script type="application/javascript">
+var alphaExp = /^[a-zA-Z]+$/; //Variable to validate only alphabets
+var alphaspaceExp = /^[a-zA-Z\s]+$/; //Variable to validate only alphabets and space
+var numericExpression = /^[0-9]+$/; //Variable to validate only numbers
+var alphanumericExp = /^[0-9a-zA-Z]+$/; //Variable to validate numbers and alphabets
+var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/; //Variable to validate Email ID 
+
+function validateform()
+{
+	if(document.frmpatapp.patiente.value == "")
+	{
+		alert("Patient name should not be empty..");
+		document.frmpatapp.patiente.focus();
+		return false;
+	}
+	else if(!document.frmpatapp.patiente.value.match(alphaspaceExp))
+	{
+		alert("Patient name not valid..");
+		document.frmpatapp.patiente.focus();
+		return false;
+	}
+	else if(document.frmpatapp.textarea.value == "")
+	{
+		alert("Address should not be empty..");
+		document.frmpatapp.textarea.focus();
+		return false;
+	}
+	else if(document.frmpatapp.city.value == "")
+	{
+		alert("City should not be empty..");
+		document.frmpatapp.city.focus();
+		return false;
+	}
+	else if(!document.frmpatapp.city.value.match(alphaspaceExp))
+	{
+		alert("City name not valid..");
+		document.frmpatapp.city.focus();
+		return false;
+	}
+	else if(document.frmpatapp.mobileno.value == "")
+	{
+		alert("Mobile number should not be empty..");
+		document.frmpatapp.mobileno.focus();
+		return false;
+	}
+	else if(!document.frmpatapp.mobileno.value.match(numericExpression))
+	{
+		alert("Mobile number not valid..");
+		document.frmpatapp.mobileno.focus();
+		return false;
+	}
+	else if(document.frmpatapp.loginid.value == "")
+	{
+		alert("login ID should not be empty..");
+		document.frmpatapp.loginid.focus();
+		return false;
+	}
+	else if(!document.frmpatapp.loginid.value.match(alphanumericExp))
+	{
+		alert("login ID not valid..");
+		document.frmpatapp.loginid.focus();
+		return false;
+	}
+	else if(document.frmpatapp.password.value == "")
+	{
+		alert("Password should not be empty..");
+		document.frmpatapp.password.focus();
+		return false;
+	}
+	else if(document.frmpatapp.password.value.length < 8)
+	{
+		alert("Password length should be more than 8 characters...");
+		document.frmpatapp.password.focus();
+		return false;
+	}
+	else if(document.frmpatapp.select6.value == "")
+	{
+		alert("Gender should not be empty..");
+		document.frmpatapp.select6.focus();
+		return false;
+	}
+	else if(document.frmpatapp.dob.value == "")
+	{
+		alert("Date Of Birth should not be empty..");
+		document.frmpatapp.dob.focus();
+		return false;
+	}
+	else if(document.frmpatapp.appointmentdate.value == "")
+	{
+		alert("Appointment date should not be empty..");
+		document.frmpatapp.appointmentdate.focus();
+		return false;
+	}
+	else if(document.frmpatapp.appointmenttime.value == "")
+	{
+		alert("Appointment time should not be empty..");
+		document.frmpatapp.appointmenttime.focus();
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+
+function loaddoctor(deptid)
+{
+alert('hi');
+	    if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("divdoc").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","departmentDoctor.php?deptid="+deptid,true);
+        xmlhttp.send();
+}
+</script>
